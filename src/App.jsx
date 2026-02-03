@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename="/onlineCalendar">
         <Routes>
           <Route path="/login" element={<GreetingPage />} />
           <Route

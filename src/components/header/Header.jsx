@@ -50,7 +50,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <a href="/mainpage">
-          <img className="header-logo" src="/logo.svg" alt="Logo" />
+          <img className="header-logo" src="./logo.svg" alt="Logo" />
         </a>
 
         <div className="events-calendar-conrollers-container">
