@@ -1,4 +1,5 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 import Button from "../ui/button/Button";
 import DropDown from "../ui/dropdown/Dropdown";
 import { useAuth } from "../../auth/AuthContext";
@@ -49,9 +50,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-container">
-        <a href="/mainpage">
+        <Link to="/mainpage">
           <img className="header-logo" src="./logo.svg" alt="Logo" />
-        </a>
+        </Link>
 
         <div className="events-calendar-conrollers-container">
           <Button
