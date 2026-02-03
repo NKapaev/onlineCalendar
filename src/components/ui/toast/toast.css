@@ -1,0 +1,29 @@
+.toast {
+  position: absolute;
+  min-width: 240px;
+  min-height: 52px;
+  padding: 14px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.24);
+  background: #fff;
+}
+
+.toast-message {
+  padding-right: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  letter-spacing: -0.04em;
+  color: #323749;
+}
+
+.toast-close-button {
+  padding: 0;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

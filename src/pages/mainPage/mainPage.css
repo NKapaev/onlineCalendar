@@ -1,0 +1,33 @@
+.main-page {
+  position: relative;
+}
+
+.confirm-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.confirm-modal-text {
+  margin-bottom: 16px;
+}
+
+.confirm-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-button:first-child {
+  margin-right: 8px;
+}
+
+.page-toast {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  min-width: 242px;
+  width: 100px;
+
+  transform: translateX(-50%);
+}

@@ -1,0 +1,83 @@
+.header {
+  height: 80px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 32px;
+}
+
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 16px;
+  width: 203px;
+  height: 40px;
+}
+
+.current-day-button {
+  margin-right: 16px;
+}
+
+.change-selected-date-button {
+  margin-right: 8px;
+}
+
+.events-calendar-conrollers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-selected-date {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #323749;
+}
+
+.header-dropdown {
+  border: 1px solid #dedfe5;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  margin-right: 32px;
+}
+
+.user-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  border-radius: 50%;
+}
+
+.logout-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(calc(100% + 10px));
+  opacity: 1;
+}
+
+.logout-button.hidden {
+  opacity: 0;
+}

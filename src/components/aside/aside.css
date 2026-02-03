@@ -1,0 +1,25 @@
+.aside {
+  width: 240px;
+  margin-right: 30px;
+}
+
+.aside-create-button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.aside-create-button > .button-icon {
+  margin-right: 6px;
+}
+
+.aside-datepicker {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.aside-calendars {
+  padding: 13px 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+}

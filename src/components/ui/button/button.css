@@ -1,0 +1,85 @@
+.button {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  border-radius: 8px;
+
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+
+  transition: all 0.25s linear;
+}
+
+.primary {
+  color: #fff;
+  border: 1px solid #00ae1c;
+  background: #00ae1c;
+}
+
+.primary:hover,
+.primary:focus {
+  border: 1px solid #5ce171;
+  box-shadow: 0 2px 2px 0 rgba(92, 225, 113, 0.25);
+  cursor: pointer;
+}
+
+.primary:active {
+  box-shadow: 0 2px 2px 0 rgba(92, 225, 113, 0.25);
+  background: #0cd52b;
+  border: 1px solid #5ce171;
+}
+
+.primary:disabled {
+  color: #b9b9b9;
+  background: #187727;
+  border: 1px solid #187727;
+  cursor: default;
+}
+
+.secondary {
+  color: #323749;
+  border: 1px solid #dedfe5;
+
+  background: #fff;
+}
+
+.secondary:hover,
+.secondary:focus {
+  box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+  background: #efefef;
+  cursor: pointer;
+}
+
+.secondary:active {
+  box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+  background: #e0e0e0;
+}
+
+.secondary:disabled {
+  color: #737373;
+  background: #c8c8c8;
+  border: 1px solid #8d8e91;
+  cursor: default;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.transparent {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+}

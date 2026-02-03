@@ -1,0 +1,124 @@
+.dropdown-container {
+  position: relative;
+  min-width: 80px;
+}
+
+.dropdown-title {
+  margin-bottom: 7px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.dropdown {
+  position: relative;
+  height: 36px;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  z-index: 3;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+
+  box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+  background: #efefef;
+}
+
+.dropdown:active,
+.dropdown.isOpen,
+.dropdown.isOpen:hover {
+  background-color: #e0e0e0;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 180px;
+  overflow-y: auto;
+  background-color: #fff;
+  transform: translateY(5px);
+
+  box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+  border: 1px solid #dedfe5;
+  border-radius: 8px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #dedfe5 transparent;
+  z-index: 5;
+}
+
+.dropdown-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  height: 36px;
+
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+  z-index: 5;
+}
+
+.dropdown-option:hover {
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+.dropdown-options::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dropdown-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb {
+  background-color: #dedfe5;
+  border-radius: 3px;
+}
+
+.selected-option {
+  background-color: #e3e3e3;
+}
+.selected-option:hover {
+  background-color: #e3e3e3;
+}
+
+.disabled {
+  cursor: default;
+  pointer-events: none;
+  box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+  background: #efefef;
+}

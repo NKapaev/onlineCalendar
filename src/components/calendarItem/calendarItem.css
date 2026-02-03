@@ -1,0 +1,44 @@
+.calendar-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.calendar-item:hover,
+.calendar-item:focus {
+  background: #f6f7f8;
+}
+
+.calendar-item .checkbox {
+  margin-right: 15px;
+}
+
+.calendar-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: -0.03em;
+  color: #323749;
+  margin-right: auto;
+}
+
+.calendar-item > .button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.calendar-item:hover > button,
+.calendar-item:focus > button {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.create-calendar-modal {
+  top: 100%;
+  left: 0;
+
+  transform: translate(-8px, 0%);
+}

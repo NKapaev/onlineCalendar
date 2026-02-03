@@ -1,0 +1,30 @@
+.textarea-container {
+  border-bottom: 1px solid #737373;
+}
+
+.textarea-title {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
+
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.textarea:focus {
+  outline: none;
+}

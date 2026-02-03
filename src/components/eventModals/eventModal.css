@@ -1,0 +1,83 @@
+.event-modal {
+  position: fixed;
+  min-width: 522px;
+  padding: 16px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.modal-field-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.displaced-event-field-container {
+  margin-left: 32px;
+}
+.create-event-checkbox {
+  margin-right: 18px;
+}
+.event-select-container {
+  display: flex;
+  align-items: flex-end;
+}
+.event-start {
+  position: relative;
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.event-start::after {
+  content: "";
+  margin: 0 8px;
+  position: absolute;
+  left: 100%;
+  top: 70%;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background-color: #5b5f6e;
+}
+.calendar-color {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.create-event-button {
+  margin-left: auto;
+  width: 80px;
+}
+.additional-buttons-container {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  right: 56px;
+}
+
+.additional-button {
+  height: 16px;
+}
+
+.additional-button:first-child {
+  margin-right: 18px;
+}
+.event-calendar-information {
+  display: flex;
+  align-items: center;
+}
+.event-calendar-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+}

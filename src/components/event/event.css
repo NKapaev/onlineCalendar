@@ -1,0 +1,61 @@
+.event {
+  padding: 5px 12px;
+  position: absolute;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.event-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.event-time {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: -0.03em;
+  color: #323749;
+}
+
+.lowHeightEvent {
+  display: flex;
+  align-items: center;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: -0.03em;
+  color: #323749;
+}
+
+.halfHeightEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.allDayEvent {
+  position: static;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.lowHeightEvent .event-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: -0.03em;
+  color: #323749;
+}

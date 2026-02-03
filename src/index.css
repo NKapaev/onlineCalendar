@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f5f7;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+use {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

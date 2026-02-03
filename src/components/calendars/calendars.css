@@ -1,0 +1,29 @@
+.calendars-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transparent-button {
+  border: none;
+  background: transparent;
+}
+
+.field-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+}
+
+.create-calendar-field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-save-button {
+  margin-left: auto;
+  margin-top: 24px;
+  min-width: 80px;
+}
