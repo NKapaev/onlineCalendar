@@ -1,6 +1,7 @@
 import "./App.css";
 import { useAuth } from "./auth/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Login from "./components/login/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -11,22 +12,24 @@ function App() {
   const { user } = useAuth();
 
   return (
-    <>
-      <Router basename="/onlineCalendar">
-        <Routes>
-          <Route path="/login" element={<GreetingPage />} />
-          <Route
-            path="/mainpage"
-            element={
-              <ProtectedRoute user={user}>
-                <MainPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route path="*" element={<Login />} />
-        </Routes>
-      </Router>
-    </>
+    <Router basename="/onlineCalendar">
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+
+        <Route path="/login" element={<GreetingPage />} />
+
+        <Route
+          path="/mainpage"
+          element={
+            <ProtectedRoute user={user}>
+              <MainPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path="*" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
